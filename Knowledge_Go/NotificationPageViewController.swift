@@ -18,4 +18,8 @@ class NotificationPageViewController: UIViewController {
     @IBAction func notificationPageButtonTapped(_ sender: Any) {
         print("notificationPageButtonTapped")
     }
+    
+    @IBAction func backButtonTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
