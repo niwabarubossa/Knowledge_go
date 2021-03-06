@@ -40,6 +40,14 @@
                                     <segue destination="LxE-af-1Fp" kind="show" id="aKt-dm-S2v"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOG-Jh-jDX">
+                                <rect key="frame" x="176" y="505" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="つながる"/>
+                                <connections>
+                                    <segue destination="9ai-uX-cHR" kind="show" id="5kB-sc-ngw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Er-oK-3Xm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -74,6 +82,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8R-we-mHS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="174" y="-615"/>
+        </scene>
+        <!--Connect Page View Controller-->
+        <scene sceneID="tFr-fV-9wJ">
+            <objects>
+                <viewController id="9ai-uX-cHR" customClass="ConnectPageViewController" customModule="Knowledge_Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y7m-QI-lLw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFD-fN-xKa">
+                                <rect key="frame" x="155" y="39" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ConnectButton"/>
+                                <connections>
+                                    <action selector="connectButtonTapped:" destination="9ai-uX-cHR" eventType="touchUpInside" id="fG0-sp-cnk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qda-kN-B91"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="t3N-tu-T5c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3WS-qe-PHc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="878"/>
         </scene>
         <!--Review Page View Controller-->
         <scene sceneID="I8Y-aR-ecF">
