@@ -15,10 +15,6 @@ class ReviewPageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func reviewButtonTapped(_ sender: Any) {
-        print("reviewButtonTapped")
-    }
-    
     @IBAction func backButtonTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
