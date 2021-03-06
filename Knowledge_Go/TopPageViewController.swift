@@ -14,9 +14,5 @@ class TopPageViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func buttonTapped(_ sender: Any) {
-        print("go submit page")
-    }
     
 }

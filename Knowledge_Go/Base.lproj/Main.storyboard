@@ -29,7 +29,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="記録する"/>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="WJ3-SO-EjF" eventType="touchUpInside" id="gGr-O4-8Qr"/>
                                     <segue destination="OjK-l5-kQR" kind="show" id="0Cu-gK-hcd"/>
                                 </connections>
                             </button>
