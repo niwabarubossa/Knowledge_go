@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BC39E9D25F3A7B9008B154C /* TopPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC39E9C25F3A7B9008B154C /* TopPageViewController.swift */; };
 		2BE7D6D025F35A580062FD4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7D6CF25F35A580062FD4D /* AppDelegate.swift */; };
 		2BE7D6D225F35A580062FD4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7D6D125F35A580062FD4D /* SceneDelegate.swift */; };
 		2BE7D6D425F35A580062FD4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7D6D325F35A580062FD4D /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BC39E9C25F3A7B9008B154C /* TopPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPageViewController.swift; sourceTree = "<group>"; };
 		2BE7D6CC25F35A580062FD4D /* Knowledge_Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knowledge_Go.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE7D6CF25F35A580062FD4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BE7D6D125F35A580062FD4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				2BE7D6D825F35A590062FD4D /* Assets.xcassets */,
 				2BE7D6DA25F35A590062FD4D /* LaunchScreen.storyboard */,
 				2BE7D6DD25F35A590062FD4D /* Info.plist */,
+				2BC39E9C25F3A7B9008B154C /* TopPageViewController.swift */,
 			);
 			path = Knowledge_Go;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BE7D6D425F35A580062FD4D /* ViewController.swift in Sources */,
+				2BC39E9D25F3A7B9008B154C /* TopPageViewController.swift in Sources */,
 				2BE7D6D025F35A580062FD4D /* AppDelegate.swift in Sources */,
 				2BE7D6D225F35A580062FD4D /* SceneDelegate.swift in Sources */,
 			);
