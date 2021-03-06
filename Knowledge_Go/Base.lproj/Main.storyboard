@@ -25,11 +25,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTB-Ga-g5k">
-                                <rect key="frame" x="184" y="294" width="46" height="30"/>
+                                <rect key="frame" x="176" y="294" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="記録する"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="WJ3-SO-EjF" eventType="touchUpInside" id="gGr-O4-8Qr"/>
+                                    <segue destination="OjK-l5-kQR" kind="show" id="0Cu-gK-hcd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -40,6 +41,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yE8-hN-vac" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1377" y="74"/>
+        </scene>
+        <!--Submit Page View Controller-->
+        <scene sceneID="WoJ-rx-GRa">
+            <objects>
+                <viewController id="OjK-l5-kQR" customClass="SubmitPageViewController" customModule="Knowledge_Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mn5-tE-bxF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVi-m2-j2j">
+                                <rect key="frame" x="183" y="584" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButtonTapped:" destination="OjK-l5-kQR" eventType="touchUpInside" id="6tx-wz-hRU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VHR-Av-Okh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sR2-Yw-2cF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8R-we-mHS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="-615"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -63,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
+            <point key="canvasLocation" x="616" y="74"/>
         </scene>
     </scenes>
     <resources>
