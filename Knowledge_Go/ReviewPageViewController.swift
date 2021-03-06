@@ -18,4 +18,8 @@ class ReviewPageViewController: UIViewController {
     @IBAction func reviewButtonTapped(_ sender: Any) {
         print("reviewButtonTapped")
     }
+    
+    @IBAction func backButtonTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

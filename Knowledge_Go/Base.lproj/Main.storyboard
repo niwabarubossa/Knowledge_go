@@ -32,6 +32,14 @@
                                     <action selector="notificationPageButtonTapped:" destination="qbc-k7-rG3" eventType="touchUpInside" id="L9p-jB-xB9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6w4-pN-hOW">
+                                <rect key="frame" x="20" y="20" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="qbc-k7-rG3" eventType="touchUpInside" id="QG4-E1-et0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W1I-m9-8YM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -114,6 +122,14 @@
                                     <action selector="submitButtonTapped:" destination="OjK-l5-kQR" eventType="touchUpInside" id="6tx-wz-hRU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHZ-2r-THW">
+                                <rect key="frame" x="20" y="20" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="OjK-l5-kQR" eventType="touchUpInside" id="1IG-Jc-xb3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VHR-Av-Okh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -122,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8R-we-mHS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="174" y="-615"/>
+            <point key="canvasLocation" x="173.91304347826087" y="-615.40178571428567"/>
         </scene>
         <!--Connect Page View Controller-->
         <scene sceneID="tFr-fV-9wJ">
@@ -138,6 +154,14 @@
                                 <state key="normal" title="ConnectButton"/>
                                 <connections>
                                     <action selector="connectButtonTapped:" destination="9ai-uX-cHR" eventType="touchUpInside" id="fG0-sp-cnk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdC-I8-yyd">
+                                <rect key="frame" x="20" y="20" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="9ai-uX-cHR" eventType="touchUpInside" id="8Fo-7B-iAm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -164,6 +188,14 @@
                                 <state key="normal" title="Review"/>
                                 <connections>
                                     <action selector="reviewButtonTapped:" destination="LxE-af-1Fp" eventType="touchUpInside" id="4Cd-kp-lak"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wv-rq-YJu">
+                                <rect key="frame" x="20" y="20" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="LxE-af-1Fp" eventType="touchUpInside" id="UQM-OZ-PK6"/>
                                 </connections>
                             </button>
                         </subviews>
