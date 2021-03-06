@@ -78,7 +78,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="復習する"/>
                                 <connections>
-                                    <segue destination="LxE-af-1Fp" kind="show" id="aKt-dm-S2v"/>
+                                    <segue destination="9ai-uX-cHR" kind="show" id="v6Z-Tz-qbj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOG-Jh-jDX">
@@ -86,7 +86,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="つながる"/>
                                 <connections>
-                                    <segue destination="9ai-uX-cHR" kind="show" id="5kB-sc-ngw"/>
+                                    <segue destination="LxE-af-1Fp" kind="show" id="Z5n-HR-BxE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mP-WR-elv">
@@ -140,28 +140,25 @@
             </objects>
             <point key="canvasLocation" x="173.91304347826087" y="-615.40178571428567"/>
         </scene>
-        <!--Connect Page View Controller-->
+        <!--Review Page View Controller-->
         <scene sceneID="tFr-fV-9wJ">
             <objects>
-                <viewController id="9ai-uX-cHR" customClass="ConnectPageViewController" customModule="Knowledge_Go" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9ai-uX-cHR" customClass="ReviewPageViewController" customModule="Knowledge_Go" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y7m-QI-lLw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFD-fN-xKa">
-                                <rect key="frame" x="155" y="39" width="104" height="30"/>
+                                <rect key="frame" x="166" y="39" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ConnectButton"/>
-                                <connections>
-                                    <action selector="connectButtonTapped:" destination="9ai-uX-cHR" eventType="touchUpInside" id="fG0-sp-cnk"/>
-                                </connections>
+                                <state key="normal" title="ReviewPage"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdC-I8-yyd">
                                 <rect key="frame" x="20" y="20" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <action selector="backButtonTapped:" destination="9ai-uX-cHR" eventType="touchUpInside" id="8Fo-7B-iAm"/>
+                                    <action selector="backButtonTapped:" destination="9ai-uX-cHR" eventType="touchUpInside" id="LiX-G4-ykt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -172,12 +169,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3WS-qe-PHc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="174" y="878"/>
+            <point key="canvasLocation" x="174" y="135"/>
         </scene>
-        <!--Review Page View Controller-->
+        <!--Connect Page View Controller-->
         <scene sceneID="I8Y-aR-ecF">
             <objects>
-                <viewController id="LxE-af-1Fp" customClass="ReviewPageViewController" customModule="Knowledge_Go" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LxE-af-1Fp" customClass="ConnectPageViewController" customModule="Knowledge_Go" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yx4-qu-u4B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -187,7 +184,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <action selector="backButtonTapped:" destination="LxE-af-1Fp" eventType="touchUpInside" id="UQM-OZ-PK6"/>
+                                    <action selector="backButtonTapped:" destination="LxE-af-1Fp" eventType="touchUpInside" id="uym-RE-Xpj"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8m-7R-BVa">
@@ -259,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5e8-Xw-pUQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="173.91304347826087" y="61.607142857142854"/>
+            <point key="canvasLocation" x="174" y="917"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -304,7 +301,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yOv-sC-zN1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1344.2028985507247" y="166.74107142857142"/>
+            <point key="canvasLocation" x="1327" y="627"/>
         </scene>
     </scenes>
     <resources>
