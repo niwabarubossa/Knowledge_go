@@ -11,6 +11,7 @@
 		2BC39EA225F3A8B7008B154C /* SubmitPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC39EA125F3A8B7008B154C /* SubmitPageViewController.swift */; };
 		2BC39EA725F3A9CA008B154C /* ReviewPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC39EA625F3A9CA008B154C /* ReviewPageViewController.swift */; };
 		2BC39EAC25F3AA69008B154C /* ConnectPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC39EAB25F3AA69008B154C /* ConnectPageViewController.swift */; };
+		2BC39EB725F3AB89008B154C /* NotificationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC39EB625F3AB89008B154C /* NotificationPageViewController.swift */; };
 		2BE7D6D025F35A580062FD4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7D6CF25F35A580062FD4D /* AppDelegate.swift */; };
 		2BE7D6D225F35A580062FD4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7D6D125F35A580062FD4D /* SceneDelegate.swift */; };
 		2BE7D6D425F35A580062FD4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7D6D325F35A580062FD4D /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		2BC39EA125F3A8B7008B154C /* SubmitPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitPageViewController.swift; sourceTree = "<group>"; };
 		2BC39EA625F3A9CA008B154C /* ReviewPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPageViewController.swift; sourceTree = "<group>"; };
 		2BC39EAB25F3AA69008B154C /* ConnectPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectPageViewController.swift; sourceTree = "<group>"; };
+		2BC39EB625F3AB89008B154C /* NotificationPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPageViewController.swift; sourceTree = "<group>"; };
 		2BE7D6CC25F35A580062FD4D /* Knowledge_Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knowledge_Go.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE7D6CF25F35A580062FD4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BE7D6D125F35A580062FD4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				2BC39EA125F3A8B7008B154C /* SubmitPageViewController.swift */,
 				2BC39EA625F3A9CA008B154C /* ReviewPageViewController.swift */,
 				2BC39EAB25F3AA69008B154C /* ConnectPageViewController.swift */,
+				2BC39EB625F3AB89008B154C /* NotificationPageViewController.swift */,
 			);
 			path = Knowledge_Go;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				2BE7D6D425F35A580062FD4D /* ViewController.swift in Sources */,
 				2BC39EAC25F3AA69008B154C /* ConnectPageViewController.swift in Sources */,
+				2BC39EB725F3AB89008B154C /* NotificationPageViewController.swift in Sources */,
 				2BC39E9D25F3A7B9008B154C /* TopPageViewController.swift in Sources */,
 				2BC39EA225F3A8B7008B154C /* SubmitPageViewController.swift in Sources */,
 				2BE7D6D025F35A580062FD4D /* AppDelegate.swift in Sources */,
