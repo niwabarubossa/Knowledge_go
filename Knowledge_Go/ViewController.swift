@@ -22,7 +22,6 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
     }
     
     private func setUpCLLocationManager(){
-        print("setUpCLLocationManager")
         locManager = CLLocationManager()
         locManager.delegate = self
     }
@@ -32,8 +31,8 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         if CLLocationManager.locationServicesEnabled() {
             switch CLLocationManager.authorizationStatus() {
                 case .authorizedWhenInUse:
-                    // 座標の表示
-                    print("ここで静的な場所に移動させる処理")
+                    self.moveMapKit()
+//                    座標の表示
 //                    locManager.startUpdatingLocation()
                     break
                 default:
@@ -41,7 +40,15 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
             }
         }
     }
+    
+    private func moveMapKit(){
+        print("静的な場所に移動させる処理")
+//        let center = mapView.convert(tapPoint, toCoordinateFrom: mapView)
+//        let lonStr = center.longitude.description
+//        let latStr = center.latitude.description
+    }
 
+//    現在地の緯度経度を表示
 //    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:[CLLocation]) {
 //        let lonStr = (locations.last?.coordinate.longitude.description)!
 //        let latStr = (locations.last?.coordinate.latitude.description)!
@@ -49,18 +56,21 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
 //        print("lat : " + latStr)
 //    }
     
-    //ios14.0以上
-//    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-//     let status = manager.authorizationStatus
-//     switch status {
-//       case .authorizedAlways, .authorizedWhenInUse:
-//        print("authorizedAlways")
-//       case .notDetermined, .denied, .restricted:
-//        print("notDetermined")
-//       default:
-//        print("default")
-//     }
-//    }
+
+    
+    @available(iOS 14.0, *)
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+    //ios 14,0以上はauthorizatoinStatusを用いる
+     let status = manager.authorizationStatus
+     switch status {
+       case .authorizedAlways, .authorizedWhenInUse:
+        print("authorizedAlways or authorizedWhenInUse")
+       case .notDetermined, .denied, .restricted:
+        print("notDetermined")
+       default:
+        print("default")
+     }
+    }
 
 }
 
