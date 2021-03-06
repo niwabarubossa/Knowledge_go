@@ -32,6 +32,14 @@
                                     <segue destination="OjK-l5-kQR" kind="show" id="0Cu-gK-hcd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLG-SL-91g">
+                                <rect key="frame" x="176" y="406" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="復習する"/>
+                                <connections>
+                                    <segue destination="LxE-af-1Fp" kind="show" id="aKt-dm-S2v"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Er-oK-3Xm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -67,6 +75,32 @@
             </objects>
             <point key="canvasLocation" x="174" y="-615"/>
         </scene>
+        <!--Review Page View Controller-->
+        <scene sceneID="I8Y-aR-ecF">
+            <objects>
+                <viewController id="LxE-af-1Fp" customClass="ReviewPageViewController" customModule="Knowledge_Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yx4-qu-u4B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZd-c4-Meo">
+                                <rect key="frame" x="183" y="464" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Review"/>
+                                <connections>
+                                    <action selector="reviewButtonTapped:" destination="LxE-af-1Fp" eventType="touchUpInside" id="4Cd-kp-lak"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CWe-g3-HFp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YnM-Y5-yy5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5e8-Xw-pUQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173.91304347826087" y="61.607142857142854"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -89,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="616" y="74"/>
+            <point key="canvasLocation" x="1146" y="54"/>
         </scene>
     </scenes>
     <resources>

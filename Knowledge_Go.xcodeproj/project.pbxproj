@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2BC39E9D25F3A7B9008B154C /* TopPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC39E9C25F3A7B9008B154C /* TopPageViewController.swift */; };
 		2BC39EA225F3A8B7008B154C /* SubmitPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC39EA125F3A8B7008B154C /* SubmitPageViewController.swift */; };
+		2BC39EA725F3A9CA008B154C /* ReviewPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC39EA625F3A9CA008B154C /* ReviewPageViewController.swift */; };
 		2BE7D6D025F35A580062FD4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7D6CF25F35A580062FD4D /* AppDelegate.swift */; };
 		2BE7D6D225F35A580062FD4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7D6D125F35A580062FD4D /* SceneDelegate.swift */; };
 		2BE7D6D425F35A580062FD4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7D6D325F35A580062FD4D /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		2BC39E9C25F3A7B9008B154C /* TopPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPageViewController.swift; sourceTree = "<group>"; };
 		2BC39EA125F3A8B7008B154C /* SubmitPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitPageViewController.swift; sourceTree = "<group>"; };
+		2BC39EA625F3A9CA008B154C /* ReviewPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPageViewController.swift; sourceTree = "<group>"; };
 		2BE7D6CC25F35A580062FD4D /* Knowledge_Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knowledge_Go.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE7D6CF25F35A580062FD4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BE7D6D125F35A580062FD4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				2BE7D6DD25F35A590062FD4D /* Info.plist */,
 				2BC39E9C25F3A7B9008B154C /* TopPageViewController.swift */,
 				2BC39EA125F3A8B7008B154C /* SubmitPageViewController.swift */,
+				2BC39EA625F3A9CA008B154C /* ReviewPageViewController.swift */,
 			);
 			path = Knowledge_Go;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				2BC39EA225F3A8B7008B154C /* SubmitPageViewController.swift in Sources */,
 				2BE7D6D025F35A580062FD4D /* AppDelegate.swift in Sources */,
 				2BE7D6D225F35A580062FD4D /* SceneDelegate.swift in Sources */,
+				2BC39EA725F3A9CA008B154C /* ReviewPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
