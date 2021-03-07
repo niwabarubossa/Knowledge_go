@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B58538D25F4754500AE02F3 /* NotifiactionQuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B58538C25F4754500AE02F3 /* NotifiactionQuestionCell.xib */; };
+		2B58539225F4757600AE02F3 /* NotifiactionQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B58539125F4757600AE02F3 /* NotifiactionQuestionCell.swift */; };
 		2BC39E9D25F3A7B9008B154C /* TopPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC39E9C25F3A7B9008B154C /* TopPageViewController.swift */; };
 		2BC39EA225F3A8B7008B154C /* SubmitPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC39EA125F3A8B7008B154C /* SubmitPageViewController.swift */; };
 		2BC39EA725F3A9CA008B154C /* ReviewPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC39EA625F3A9CA008B154C /* ReviewPageViewController.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B58538C25F4754500AE02F3 /* NotifiactionQuestionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotifiactionQuestionCell.xib; sourceTree = "<group>"; };
+		2B58539125F4757600AE02F3 /* NotifiactionQuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifiactionQuestionCell.swift; sourceTree = "<group>"; };
 		2BC39E9C25F3A7B9008B154C /* TopPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPageViewController.swift; sourceTree = "<group>"; };
 		2BC39EA125F3A8B7008B154C /* SubmitPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitPageViewController.swift; sourceTree = "<group>"; };
 		2BC39EA625F3A9CA008B154C /* ReviewPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPageViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				2BC39EA625F3A9CA008B154C /* ReviewPageViewController.swift */,
 				2BC39EAB25F3AA69008B154C /* ConnectPageViewController.swift */,
 				2BC39EB625F3AB89008B154C /* NotificationPageViewController.swift */,
+				2B58538C25F4754500AE02F3 /* NotifiactionQuestionCell.xib */,
+				2B58539125F4757600AE02F3 /* NotifiactionQuestionCell.swift */,
 			);
 			path = Knowledge_Go;
 			sourceTree = "<group>";
@@ -246,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B58538D25F4754500AE02F3 /* NotifiactionQuestionCell.xib in Resources */,
 				2BE7D6DC25F35A590062FD4D /* LaunchScreen.storyboard in Resources */,
 				2BE7D6D925F35A590062FD4D /* Assets.xcassets in Resources */,
 				2BE7D6D725F35A580062FD4D /* Main.storyboard in Resources */,
@@ -280,6 +287,7 @@
 				2BC39EA225F3A8B7008B154C /* SubmitPageViewController.swift in Sources */,
 				2BE7D6D025F35A580062FD4D /* AppDelegate.swift in Sources */,
 				2BE7D6D225F35A580062FD4D /* SceneDelegate.swift in Sources */,
+				2B58539225F4757600AE02F3 /* NotifiactionQuestionCell.swift in Sources */,
 				2BC39EA725F3A9CA008B154C /* ReviewPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
