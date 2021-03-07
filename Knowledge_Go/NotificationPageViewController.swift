@@ -12,9 +12,9 @@ class NotificationPageViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     var dataSource:[Dictionary<String,String>] = [
-        ["test":"test"],
-        ["test":"test"],
-        ["test":"test"],
+        ["test":"東洋思想について詳しく知りたい！"],
+        ["test":"微分方程式ってどういう解き方があるの？"],
+        ["test":"フォルマントってどういう使い方するんですか？"],
     ]
     
     override func viewDidLoad() {
