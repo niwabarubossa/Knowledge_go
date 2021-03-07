@@ -34,6 +34,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
                     self.moveMapKit()
 //                    座標の表示
 //                    locManager.startUpdatingLocation()
+//                    コメントアウトの追加
                     break
                 default:
                     break
