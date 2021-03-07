@@ -15,8 +15,25 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0H9-L0-aZT" id="S8h-mI-dsE">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
-                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESf-Sn-WbS">
+                        <rect key="frame" x="10" y="10" width="394" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ESf-Sn-WbS" secondAttribute="bottom" constant="10" id="BBz-Wl-win"/>
+                    <constraint firstItem="ESf-Sn-WbS" firstAttribute="leading" secondItem="S8h-mI-dsE" secondAttribute="leading" constant="10" id="CXJ-L8-UsY"/>
+                    <constraint firstAttribute="trailing" secondItem="ESf-Sn-WbS" secondAttribute="trailing" constant="10" id="NxB-dm-ujS"/>
+                    <constraint firstItem="ESf-Sn-WbS" firstAttribute="top" secondItem="S8h-mI-dsE" secondAttribute="top" constant="10" id="aLq-6N-1dv"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="cellLabel" destination="ESf-Sn-WbS" id="bgJ-Y7-nUR"/>
+            </connections>
             <point key="canvasLocation" x="110" y="37"/>
         </tableViewCell>
     </objects>

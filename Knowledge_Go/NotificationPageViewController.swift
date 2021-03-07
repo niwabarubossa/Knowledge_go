@@ -40,6 +40,7 @@ extension NotificationPageViewController: UITableViewDataSource,UITableViewDeleg
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NotifiactionQuestionCell", for: indexPath ) as! NotifiactionQuestionCell
         cell.selectionStyle = .none
+        cell.cellLabel.text = dataSource[indexPath.row]["test"]
         return cell
     }
     
