@@ -35,6 +35,7 @@ extension NotificationPageViewController: UITableViewDataSource,UITableViewDeleg
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(UINib(nibName: "NotifiactionQuestionCell", bundle: nil), forCellReuseIdentifier: "NotifiactionQuestionCell")
+        tableView.tableFooterView = UIView() //区切り線をなくす
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
