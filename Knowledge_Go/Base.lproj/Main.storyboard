@@ -65,29 +65,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TopPage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8J-iM-MBH">
-                                <rect key="frame" x="174" y="119" width="67" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLG-SL-91g">
-                                <rect key="frame" x="176" y="406" width="62" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="復習する"/>
-                                <connections>
-                                    <segue destination="9ai-uX-cHR" kind="show" id="v6Z-Tz-qbj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOG-Jh-jDX">
-                                <rect key="frame" x="176" y="619" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="つながる"/>
-                                <connections>
-                                    <segue destination="LxE-af-1Fp" kind="show" id="Z5n-HR-BxE"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mP-WR-elv">
                                 <rect key="frame" x="19" y="827" width="74" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -96,10 +73,28 @@
                                     <segue destination="qbc-k7-rG3" kind="show" id="1pK-5l-I76"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTB-Ga-g5k">
-                                <rect key="frame" x="142" y="321" width="131" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLG-SL-91g">
+                                <rect key="frame" x="107" y="450" width="200" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="6o5-Dw-2sJ"/>
+                                    <constraint firstAttribute="height" constant="60" id="gMG-Ip-YeH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="復習する">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9ai-uX-cHR" kind="show" id="v6Z-Tz-qbj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTB-Ga-g5k">
+                                <rect key="frame" x="107" y="350" width="200" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="5Pa-xw-M1d"/>
+                                    <constraint firstAttribute="width" constant="200" id="hgD-7O-TQG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="記録する">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -111,6 +106,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Er-oK-3Xm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fLG-SL-91g" firstAttribute="centerX" secondItem="23r-Gk-UNJ" secondAttribute="centerX" id="NJc-YG-cpE"/>
+                            <constraint firstItem="fLG-SL-91g" firstAttribute="top" secondItem="xTB-Ga-g5k" secondAttribute="bottom" constant="40" id="daq-a9-xm8"/>
+                            <constraint firstItem="xTB-Ga-g5k" firstAttribute="centerX" secondItem="23r-Gk-UNJ" secondAttribute="centerX" id="nMC-cQ-mR5"/>
+                            <constraint firstItem="5Er-oK-3Xm" firstAttribute="bottom" secondItem="fLG-SL-91g" secondAttribute="bottom" constant="352" id="nt1-vj-xMw"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yE8-hN-vac" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -213,6 +214,14 @@
                                 <rect key="frame" x="57" y="313.5" width="300" height="30"/>
                                 <state key="normal" title="マップから選択する"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ma-ZA-maL">
+                                <rect key="frame" x="20" y="20" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="9ai-uX-cHR" eventType="touchUpInside" id="B4L-1Q-Lsm"/>
+                                    <action selector="backButtonTapped:" destination="OjK-l5-kQR" eventType="touchUpInside" id="oKp-Ua-VNp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VHR-Av-Okh"/>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
@@ -224,8 +233,10 @@
                             <constraint firstItem="DVi-m2-j2j" firstAttribute="top" secondItem="dyT-mM-mmq" secondAttribute="bottom" constant="20" id="5RR-hE-QuY"/>
                             <constraint firstItem="RHn-la-Gsy" firstAttribute="top" secondItem="t6C-b6-jR5" secondAttribute="bottom" constant="20" id="7EU-ql-ALA"/>
                             <constraint firstItem="ZZF-Iv-fSt" firstAttribute="top" secondItem="uht-Gy-kxP" secondAttribute="bottom" constant="20" id="A6T-vt-8x3"/>
+                            <constraint firstItem="7Ma-ZA-maL" firstAttribute="leading" secondItem="VHR-Av-Okh" secondAttribute="leading" constant="20" id="DcL-Ga-dmm"/>
                             <constraint firstItem="RHn-la-Gsy" firstAttribute="width" secondItem="t6C-b6-jR5" secondAttribute="width" id="GER-kf-68V"/>
                             <constraint firstItem="sUT-EH-Hvy" firstAttribute="width" secondItem="ZZF-Iv-fSt" secondAttribute="width" id="IIm-LQ-86R"/>
+                            <constraint firstItem="7Ma-ZA-maL" firstAttribute="top" secondItem="VHR-Av-Okh" secondAttribute="top" constant="20" id="KMv-l8-IIr"/>
                             <constraint firstItem="GrM-L5-ISk" firstAttribute="centerX" secondItem="Mn5-tE-bxF" secondAttribute="centerX" id="MvK-BD-964"/>
                             <constraint firstItem="ZZF-Iv-fSt" firstAttribute="centerX" secondItem="Mn5-tE-bxF" secondAttribute="centerX" id="NP2-pu-Y1h"/>
                             <constraint firstItem="sUT-EH-Hvy" firstAttribute="top" secondItem="GrM-L5-ISk" secondAttribute="bottom" constant="20" id="NQP-ZX-yAz"/>
@@ -261,14 +272,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFD-fN-xKa">
-                                <rect key="frame" x="166" y="39" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ReviewPage"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdC-I8-yyd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdC-I8-yyd">
                                 <rect key="frame" x="20" y="20" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="backButtonTapped:" destination="9ai-uX-cHR" eventType="touchUpInside" id="LiX-G4-ykt"/>
@@ -277,6 +282,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qda-kN-B91"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WdC-I8-yyd" firstAttribute="leading" secondItem="qda-kN-B91" secondAttribute="leading" constant="20" id="eod-Wg-dDe"/>
+                            <constraint firstItem="WdC-I8-yyd" firstAttribute="top" secondItem="qda-kN-B91" secondAttribute="top" constant="20" id="tpW-j5-YTc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="t3N-tu-T5c"/>
                 </viewController>
@@ -289,7 +298,7 @@
             <objects>
                 <viewController id="LxE-af-1Fp" customClass="ConnectPageViewController" customModule="Knowledge_Go" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yx4-qu-u4B">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wv-rq-YJu">
@@ -301,7 +310,7 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8m-7R-BVa">
-                                <rect key="frame" x="0.0" y="100" width="414" height="708"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGt-oF-Ntj">
                                         <rect key="frame" x="0.0" y="0.0" width="621" height="1000"/>
