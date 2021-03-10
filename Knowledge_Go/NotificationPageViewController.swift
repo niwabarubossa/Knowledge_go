@@ -12,9 +12,9 @@ class NotificationPageViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     var dataSource:[Dictionary<String,String>] = [
-        ["test":"東洋思想について詳しく知りたい！"],
-        ["test":"微分方程式ってどういう解き方があるの？"],
-        ["test":"フォルマントってどういう使い方するんですか？"],
+        ["quiz":"ココス天久保店で,統計学のp値について"],
+        ["quiz":"スターバックス,つくば駅店で,タコの生態について"],
+        ["quiz":"ミスタードーナツ,つくば駅店で,重積分の方法について"],
     ]
     
     override func viewDidLoad() {
@@ -41,7 +41,7 @@ extension NotificationPageViewController: UITableViewDataSource,UITableViewDeleg
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NotifiactionQuestionCell", for: indexPath ) as! NotifiactionQuestionCell
         cell.selectionStyle = .none
-        cell.cellLabel.text = dataSource[indexPath.row]["test"]
+        cell.cellLabel.text = dataSource[indexPath.row]["quiz"]
         return cell
     }
     
