@@ -281,7 +281,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d05-0K-m9Q">
                                 <rect key="frame" x="107" y="448" width="200" height="60"/>
-                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="TWS-IE-Q6N"/>
                                     <constraint firstAttribute="width" constant="200" id="leq-bK-nAP"/>
@@ -290,6 +290,9 @@
                                 <state key="normal" title="歩きながら復習">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="A7H-Ta-DUh" kind="show" id="4V7-nR-vsf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rce-7U-fRS">
                                 <rect key="frame" x="107" y="348" width="200" height="60"/>
@@ -302,6 +305,9 @@
                                 <state key="normal" title="今すぐ復習">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="850-f4-Pr8" kind="show" id="1bm-21-fuq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qda-kN-B91"/>
@@ -320,6 +326,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3WS-qe-PHc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="174" y="135"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Z2T-Ds-rZH">
+            <objects>
+                <viewController id="850-f4-Pr8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vcS-wd-cal">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ier-UM-FJb">
+                                <rect key="frame" x="20" y="81" width="374" height="707"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投稿タイトルをヒントに内容を思い出そう！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNt-TW-Vsc">
+                                <rect key="frame" x="33.5" y="30" width="347" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BBh-1z-Ymb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BBh-1z-Ymb" firstAttribute="bottom" secondItem="Ier-UM-FJb" secondAttribute="bottom" constant="20" id="O1n-5G-2yD"/>
+                            <constraint firstItem="CNt-TW-Vsc" firstAttribute="top" secondItem="BBh-1z-Ymb" secondAttribute="top" constant="30" id="baM-RC-5Vm"/>
+                            <constraint firstItem="Ier-UM-FJb" firstAttribute="top" secondItem="CNt-TW-Vsc" secondAttribute="bottom" constant="30" id="cKJ-2A-RnY"/>
+                            <constraint firstItem="Ier-UM-FJb" firstAttribute="leading" secondItem="BBh-1z-Ymb" secondAttribute="leading" constant="20" id="ell-g7-F7h"/>
+                            <constraint firstItem="BBh-1z-Ymb" firstAttribute="trailing" secondItem="Ier-UM-FJb" secondAttribute="trailing" constant="20" id="fta-ud-bku"/>
+                            <constraint firstItem="CNt-TW-Vsc" firstAttribute="centerX" secondItem="vcS-wd-cal" secondAttribute="centerX" id="jrc-bu-S4u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7hr-i1-S9V"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y0B-NX-cGg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1829" y="-64"/>
         </scene>
         <!--Connect Page View Controller-->
         <scene sceneID="I8Y-aR-ecF">
@@ -442,7 +484,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5e8-Xw-pUQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="173.91304347826087" y="916.74107142857133"/>
+            <point key="canvasLocation" x="-951" y="1880"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -466,7 +508,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2435" y="-319"/>
+            <point key="canvasLocation" x="2970" y="-739"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QPy-R8-Kud">
@@ -487,7 +529,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yOv-sC-zN1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1327" y="627"/>
+            <point key="canvasLocation" x="1495" y="1987"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rx2-EZ-6V0">
+            <objects>
+                <viewController id="A7H-Ta-DUh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pPA-Hw-bxq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="外を自由に歩いてください！一定間隔で問題が出題されます！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAz-y7-8bc">
+                                <rect key="frame" x="57" y="400.5" width="300" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="xUJ-3e-E7M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bqg-pk-Tnh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LAz-y7-8bc" firstAttribute="centerY" secondItem="pPA-Hw-bxq" secondAttribute="centerY" id="L5a-53-wqV"/>
+                            <constraint firstItem="LAz-y7-8bc" firstAttribute="centerX" secondItem="pPA-Hw-bxq" secondAttribute="centerX" id="kGJ-tK-htH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tZC-Co-N6p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8YZ-fJ-3Ya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828.985507246377" y="714.50892857142856"/>
         </scene>
     </scenes>
     <resources>
