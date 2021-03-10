@@ -17,9 +17,6 @@ class SubmitPageViewController: UIViewController {
     
     @IBAction func submitButtonTapped(_ sender: Any) {
         print("submitButtonTapped")
-    }
-    
-    @IBAction func backButtonTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
