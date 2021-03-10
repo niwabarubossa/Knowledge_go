@@ -279,11 +279,39 @@
                                     <action selector="backButtonTapped:" destination="9ai-uX-cHR" eventType="touchUpInside" id="LiX-G4-ykt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d05-0K-m9Q">
+                                <rect key="frame" x="107" y="448" width="200" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="TWS-IE-Q6N"/>
+                                    <constraint firstAttribute="width" constant="200" id="leq-bK-nAP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="歩きながら復習">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rce-7U-fRS">
+                                <rect key="frame" x="107" y="348" width="200" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="UdK-by-4cL"/>
+                                    <constraint firstAttribute="height" constant="60" id="mgq-f6-FRL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="今すぐ復習">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qda-kN-B91"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="d05-0K-m9Q" firstAttribute="centerX" secondItem="Y7m-QI-lLw" secondAttribute="centerX" id="D2j-mR-tB7"/>
+                            <constraint firstItem="d05-0K-m9Q" firstAttribute="top" secondItem="rce-7U-fRS" secondAttribute="bottom" constant="40" id="cGM-40-tCq"/>
+                            <constraint firstItem="rce-7U-fRS" firstAttribute="centerX" secondItem="Y7m-QI-lLw" secondAttribute="centerX" id="ed3-gD-yBA"/>
                             <constraint firstItem="WdC-I8-yyd" firstAttribute="leading" secondItem="qda-kN-B91" secondAttribute="leading" constant="20" id="eod-Wg-dDe"/>
+                            <constraint firstItem="qda-kN-B91" firstAttribute="bottom" secondItem="d05-0K-m9Q" secondAttribute="bottom" constant="300" id="mx4-eY-pyf"/>
                             <constraint firstItem="WdC-I8-yyd" firstAttribute="top" secondItem="qda-kN-B91" secondAttribute="top" constant="20" id="tpW-j5-YTc"/>
                         </constraints>
                     </view>
